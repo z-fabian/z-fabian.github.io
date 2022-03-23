@@ -5,6 +5,17 @@ permalink: /news/
 author_profile: true
 classes: wide
 
+feature_row7:
+  - image_path: assets/images/humus-net.png
+    title: "03/15/2022"
+    excerpt: "We published a preprint version of our new work on HUMUS-Net: a Transformer-convolutional hybrid model for accelerated MRI reconstruction. Common deep learning reconstruction techniques in MRI typically utilize convolution layers as the primary processing unit, however convolution kernels struggle to model long-range pixel dependencies in images and are content-independent. On the other hand, Transformer architectures are free from these limitations and are rapidly gaining ground in a range of vision applications. Our proposed architecture combines the benefits of both worlds and [achieves state-of-the-art results](https://fastmri.org/leaderboards) on the [fastMRI dataset](https://fastmri.med.nyu.edu/), the largest publicly available MRI dataset."
+    url: "https://arxiv.org/abs/2203.08213"
+    btn_label: "Paper"
+    btn_class: "btn--primary"
+    url2: "https://github.com/z-fabian/HUMUS-Net"
+    btn_label2: "Code"
+    btn_class2: "btn--primary"
+
 feature_row6:
   - image_path: assets/images/research-festival2021-poster-small.png
     title: "10/29/2021"
@@ -69,6 +80,7 @@ feature_row0:
     btn_label: "Slides"
     btn_class: "btn--primary"
 ---
+{% include feature_row id="feature_row7" type="left" %}
 {% include feature_row id="feature_row6" type="left" %}
 {% include feature_row id="feature_row5" type="left" %}
 {% include feature_row id="feature_row4" type="left" %}

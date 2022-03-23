@@ -40,4 +40,10 @@ var store = [{
         "tags": [],
         "url": "/publications/2021-07-01-data-augmentation-for-deep-learning",
         "teaser": null
+      },{
+        "title": "HUMUS-Net: Hybrid unrolled multi-scale network architecture for accelerated MRI reconstruction",
+        "excerpt":"Zalan Fabian, Mahdi Soltanolkotabi arXiv preprint arXiv:2203.08213, 2022 In accelerated MRI reconstruction, the anatomy of a patient is recovered from a set of under-sampled and noisy measurements. Deep learning approaches have been proven to be successful in solving this ill-posed inverse problem and are capable of producing very high quality...","categories": [],
+        "tags": [],
+        "url": "/publications/2022-03-15-humus-net-hybrid-unrolled-network",
+        "teaser": null
       }]
