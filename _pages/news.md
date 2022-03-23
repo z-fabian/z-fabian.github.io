@@ -12,9 +12,12 @@ feature_row7:
     url: "https://arxiv.org/abs/2203.08213"
     btn_label: "Paper"
     btn_class: "btn--primary"
-    url2: "https://github.com/z-fabian/HUMUS-Net"
-    btn_label2: "Code"
+    url2: "/assets/slides/HUMUS_Net_slides.pdf"
+    btn_label2: "Slides"
     btn_class2: "btn--primary"
+    url3: "https://github.com/z-fabian/HUMUS-Net"
+    btn_label3: "Code"
+    btn_class3: "btn--primary"
 
 feature_row6:
   - image_path: assets/images/research-festival2021-poster-small.png
