@@ -5,6 +5,11 @@ permalink: /news/
 author_profile: true
 classes: wide
 
+feature_row8:
+  - image_path: assets/images/amazon-logo.png
+    title: "05/19/2022"
+    excerpt: "I am very excited to share that I will be joining Amazon's Alexa Perceptual Technologies as an Applied Scientist Intern for the summer under the mentorship of Rajath Kumar. We are going to work on improving wake word verification models through semi-supervised learning techniques and data augmentation. I am looking forward to collaborating with Amazon researchers and learning more about their work."
+
 feature_row7:
   - image_path: assets/images/humus-net.png
     title: "03/15/2022"
@@ -83,6 +88,7 @@ feature_row0:
     btn_label: "Slides"
     btn_class: "btn--primary"
 ---
+{% include feature_row id="feature_row8" type="left" %}
 {% include feature_row id="feature_row7" type="left" %}
 {% include feature_row id="feature_row6" type="left" %}
 {% include feature_row id="feature_row5" type="left" %}

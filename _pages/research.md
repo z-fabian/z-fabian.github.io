@@ -15,10 +15,14 @@ My research at USC has evolved along three themes.
 
 Prior to joining USC, I have been a research assistant under the supervision of [Se Young Yoon](https://ceps.unh.edu/person/se-young-yoon) at the [University of New Hampshire](https://www.unh.edu/) working on intelligent robotic swarm control algorithms. We published papers on [adjustable swarm autonomy](/publications/2016-12-12-coordination-of-multi-agent-leader-follower-system) and [the control of balanced leader-follower swarms](/publications/2017-12-12-coordination-of-balanced-leader-follower-swarms) at [CDC](http://cdc2016.ieeecss.org/), the top controls conference.  
 
-## Professional service
+# Industry research
+## Amazon - Applied Scientist Intern
+I interned at Alexa Perceptual Technologies over the summer of 2022 under the mentorship of Rajath Kumar and Joe Wang. I designed and implemented novel data augmentation techniques for speech data and evaluated semi-supervised learning techniques for [wake word verification model](http://www.interspeech2020.org/uploadfile/pdf/Wed-1-2-7.pdf) training.
+
+# Professional service
 I have served as a reviewer for the following machine learning, signal processing and controls conferences:
-- Neural Information Processing Systems (NeurIPS) 2020, 2021
-- International Conference on Machine Learning (ICML) 2021
+- Neural Information Processing Systems (NeurIPS) 2020, 2021, 2022
+- International Conference on Machine Learning (ICML) 2021, 2022 (Outstanding Reviewer)
 - International Conference on Learning Representations (ICLR) 2020, 2021, 2022
 - Sampling Theory and Applications (SampTA) 2019
 - IEEE Conference on Decision and Control (CDC) 2016, 2017
