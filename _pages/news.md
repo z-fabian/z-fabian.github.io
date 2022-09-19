@@ -5,6 +5,25 @@ permalink: /news/
 author_profile: true
 classes: wide
 
+feature_row10:
+  - image_path: assets/images/NeurIPS-logo.png
+    title: "09/14/2022"
+    excerpt: "Our work *HUMUS-Net: a Transformer-convolutional hybrid model for accelerated MRI reconstruction* has been accepted for NeurIPS 2022. I am looking forward to sharing our work and interacting with other researchers in the field in person for the first time in a while at NeurIPS."
+    url: "https://arxiv.org/abs/2203.08213"
+    btn_label: "Paper (arXiv)"
+    btn_class: "btn--primary"
+    url2: "/assets/slides/HUMUS_Net_slides.pdf"
+    btn_label2: "Slides"
+    btn_class2: "btn--primary"
+    url3: "https://github.com/z-fabian/HUMUS-Net"
+    btn_label3: "Code"
+    btn_class3: "btn--primary"
+
+feature_row9:
+  - image_path: assets/images/CM2022-microscopy.png
+    title: "09/12/2022"
+    excerpt: "I am participating in [IPAM's Computational Microscopy](http://www.ipam.ucla.edu/programs/long-programs/computational-microscopy/) long program at UCLA as a Graduate Visiting Researcher. This program brings together leading experts in the fields of applied mathematics, physics, biology, materials science and engineering in order to encourage debate and collaboration on modern microscopy techniques, such as coherent diffraction imaging, super-resolved fluorescence microscopy (2014 Nobel prize) and a special focus on cryo-electron microscopy (cryo-EM, 2017 Nobel prize). These methods result in high-dimensional, multimodal and extremely noisy data, where extracting useful information, and eventually scientific knowledge is challenging. Deep learning has enormous potential in tackling these challenges that may lead to breakthroughs in materials science, quantum devices and drug discovery."
+
 feature_row8:
   - image_path: assets/images/amazon-logo.png
     title: "05/19/2022"
@@ -88,6 +107,8 @@ feature_row0:
     btn_label: "Slides"
     btn_class: "btn--primary"
 ---
+{% include feature_row id="feature_row10" type="left" %}
+{% include feature_row id="feature_row9" type="left" %}
 {% include feature_row id="feature_row8" type="left" %}
 {% include feature_row id="feature_row7" type="left" %}
 {% include feature_row id="feature_row6" type="left" %}
