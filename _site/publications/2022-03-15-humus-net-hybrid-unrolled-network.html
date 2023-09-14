@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>HUMUS-Net: Hybrid unrolled multi-scale network architecture for accelerated MRI reconstruction | z-fabian</title>
-<meta name="description" content="Fabian, Z. and Soltanolkotabi, M., 2022, March. arXiv preprint arXiv:2203.08213">
+<meta name="description" content="Fabian, Z., Tinaz, B. and Soltanolkotabi, M., 2022, In Advances in Neural Information Processing Systems (25306–25319)">
 
 
   <meta name="author" content="Zalan Fabian">
@@ -23,29 +23,29 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="z-fabian">
 <meta property="og:title" content="HUMUS-Net: Hybrid unrolled multi-scale network architecture for accelerated MRI reconstruction">
-<meta property="og:url" content="/publications/2022-03-15-humus-net-hybrid-unrolled-network">
+<meta property="og:url" content="http://0.0.0.0:4000/publications/2022-03-15-humus-net-hybrid-unrolled-network">
 
 
-  <meta property="og:description" content="Fabian, Z. and Soltanolkotabi, M., 2022, March. arXiv preprint arXiv:2203.08213">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2022-03-15T00:00:00-05:00">
+  <meta property="og:description" content="Fabian, Z., Tinaz, B. and Soltanolkotabi, M., 2022, In Advances in Neural Information Processing Systems (25306–25319)">
 
 
 
 
 
-  
+
+
+  <meta property="article:published_time" content="2022-12-01T00:00:00+00:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="/publications/2022-03-15-humus-net-hybrid-unrolled-network">
+
+<link rel="canonical" href="http://0.0.0.0:4000/publications/2022-03-15-humus-net-hybrid-unrolled-network">
 
 
 
@@ -56,7 +56,7 @@
     
       "@type": "Person",
       "name": "Zalan Fabian",
-      "url": "/"
+      "url": "http://0.0.0.0:4000/"
     
   }
 </script>
@@ -161,7 +161,7 @@
 
   
     <div class="author__avatar">
-      <a href="/">
+      <a href="http://0.0.0.0:4000/">
         <img src="/assets/images/bio-photo.png" alt="Zalan Fabian" itemprop="image" class=">
       </a>
     </div>
@@ -169,7 +169,7 @@
 
   <div class="author__content">
     <h3 class="author__name p-name" itemprop="name">
-      <a class="u-url" rel="me" href="/" itemprop="url">Zalan Fabian</a>
+      <a class="u-url" rel="me" href="http://0.0.0.0:4000/" itemprop="url">Zalan Fabian</a>
     </h3>
     
       <div class="author__bio p-note" itemprop="description">
@@ -285,15 +285,15 @@
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="HUMUS-Net: Hybrid unrolled multi-scale network architecture for accelerated MRI reconstruction">
-    <meta itemprop="description" content="Fabian, Z. and Soltanolkotabi, M., 2022, March. arXiv preprint arXiv:2203.08213">
-    <meta itemprop="datePublished" content="2022-03-15T00:00:00-05:00">
+    <meta itemprop="description" content="Fabian, Z., Tinaz, B. and Soltanolkotabi, M., 2022, In Advances in Neural Information Processing Systems (25306–25319)">
+    <meta itemprop="datePublished" content="2022-12-01T00:00:00+00:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="/publications/2022-03-15-humus-net-hybrid-unrolled-network" class="u-url" itemprop="url">HUMUS-Net: Hybrid unrolled multi-scale network architecture for accelerated MRI reconstruction
+            <a href="http://0.0.0.0:4000/publications/2022-03-15-humus-net-hybrid-unrolled-network" class="u-url" itemprop="url">HUMUS-Net: Hybrid unrolled multi-scale network architecture for accelerated MRI reconstruction
 </a>
           </h1>
           
@@ -304,24 +304,28 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <p>Zalan Fabian, Mahdi Soltanolkotabi <br />
-arXiv preprint arXiv:2203.08213, 2022</p>
+        <p>Zalan Fabian, Berk Tinaz, Mahdi Soltanolkotabi <br />
+Published in <em>Advances in Neural Information Processing Systems</em>, 2022</p>
 
 <p>In accelerated MRI reconstruction, the anatomy of a patient is recovered from a set of under-sampled and noisy measurements. Deep learning approaches have been proven to be successful in solving this ill-posed inverse problem and are capable of producing very high quality reconstructions. However, current architectures heavily rely on convolutions, that are content-independent and have difficulties modeling long-range dependencies in images. Recently, Transformers, the workhorse of contemporary natural language processing, have emerged as powerful building blocks for a multitude of vision tasks. These models split input images into non-overlapping patches, embed the patches into lower-dimensional tokens and utilize a self-attention mechanism that does not suffer from the aforementioned weaknesses of convolutional architectures. However, Transformers incur extremely high compute and memory cost when 1) the input image resolution is high and 2) when the image needs to be split into a large number of patches to preserve fine detail information, both of which are typical in low-level vision problems such as MRI reconstruction, having a compounding effect. To tackle these challenges, we propose HUMUS-Net, a hybrid architecture that combines the beneficial implicit bias and efficiency of convolutions with the power of Transformer blocks in an unrolled and multi-scale network. HUMUS-Net extracts high-resolution features via convolutional blocks and refines low-resolution features via a novel Transformer-based multi-scale feature extractor. Features from both levels are then synthesized into a high-resolution output reconstruction. Our network establishes new state of the art on the largest publicly available MRI dataset, the fastMRI dataset. We further demonstrate the performance of HUMUS-Net on two other popular MRI datasets and perform fine-grained ablation studies to validate our design.</p>
 
-<p><a href="https://arxiv.org/pdf/2203.08213.pdf" class="btn btn--info btn--large">Paper</a>
+<p><a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/a1bb3f96e255ae1e04325ae166bcef0f-Paper-Conference.pdf" class="btn btn--info btn--large">Paper</a>
+<a href="/assets/posters/humus_neurips2022_poster.png" class="btn btn--success btn--large">Poster</a>
 <a href="/assets/slides/HUMUS_Net_slides.pdf" class="btn btn--warning btn--large">Slides</a>
 <a href="https://github.com/z-fabian/HUMUS-Net" class="btn btn--primary btn--large"><i class="fab fa-github"></i> Code</a></p>
 
 <p><b>Recommended citation</b></p>
 
-<p class="notice">Fabian, Z. and Soltanolkotabi, M., 2022, March. "HUMUS-Net: Hybrid unrolled multi-scale network architecture for accelerated MRI reconstruction". arXiv preprint arXiv:2203.08213</p>
+<p class="notice">Fabian, Z. Tinaz, B. and Soltanolkotabi, M., 2022, December. "HUMUS-Net: Hybrid unrolled multi-scale network architecture for accelerated MRI reconstruction".  In <em>Advances in Neural Information Processing Systems</em></p>
 
 <p><b>BibTeX<b></b></b></p>
+
 <div class="language-bibtex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">@article</span><span class="p">{</span><span class="nl">fabian2022humus</span><span class="p">,</span>
-  <span class="na">title</span><span class="p">=</span><span class="s">{HUMUS-Net: Hybrid unrolled multi-scale network architecture for accelerated MRI reconstruction}</span><span class="p">,</span>
-  <span class="na">author</span><span class="p">=</span><span class="s">{Fabian, Zalan and Soltanolkotabi, Mahdi}</span><span class="p">,</span>
-  <span class="na">journal</span><span class="p">=</span><span class="s">{arXiv preprint arXiv:2203.08213}</span><span class="p">,</span>
+  <span class="na">title</span><span class="p">=</span><span class="s">{Humus-net: Hybrid unrolled multi-scale network architecture for accelerated mri reconstruction}</span><span class="p">,</span>
+  <span class="na">author</span><span class="p">=</span><span class="s">{Fabian, Zalan and Tinaz, Berk and Soltanolkotabi, Mahdi}</span><span class="p">,</span>
+  <span class="na">journal</span><span class="p">=</span><span class="s">{Advances in Neural Information Processing Systems}</span><span class="p">,</span>
+  <span class="na">volume</span><span class="p">=</span><span class="s">{35}</span><span class="p">,</span>
+  <span class="na">pages</span><span class="p">=</span><span class="s">{25306--25319}</span><span class="p">,</span>
   <span class="na">year</span><span class="p">=</span><span class="s">{2022}</span>
 <span class="p">}</span>
 </code></pre></div></div>
@@ -336,7 +340,7 @@ arXiv preprint arXiv:2203.08213, 2022</p>
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2022-03-15T00:00:00-05:00">March 15, 2022</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2022-12-01T00:00:00+00:00">December 1, 2022</time></p>
 
       </footer>
 
@@ -345,11 +349,11 @@ arXiv preprint arXiv:2203.08213, 2022</p>
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=HUMUS-Net%3A+Hybrid+unrolled+multi-scale+network+architecture+for+accelerated+MRI+reconstruction%20%2Fpublications%2F2022-03-15-humus-net-hybrid-unrolled-network" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=HUMUS-Net%3A+Hybrid+unrolled+multi-scale+network+architecture+for+accelerated+MRI+reconstruction%20http%3A%2F%2F0.0.0.0%3A4000%2Fpublications%2F2022-03-15-humus-net-hybrid-unrolled-network" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=%2Fpublications%2F2022-03-15-humus-net-hybrid-unrolled-network" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F0.0.0.0%3A4000%2Fpublications%2F2022-03-15-humus-net-hybrid-unrolled-network" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2Fpublications%2F2022-03-15-humus-net-hybrid-unrolled-network" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2F0.0.0.0%3A4000%2Fpublications%2F2022-03-15-humus-net-hybrid-unrolled-network" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
@@ -360,7 +364,8 @@ arXiv preprint arXiv:2203.08213, 2022</p>
 ">Previous</a>
     
     
-      <a href="#" class="pagination--pager disabled">Next</a>
+      <a href="/publications/2023-03-25-diracdiffusion" class="pagination--pager" title="DiracDiffusion: Denoising and Incremental Reconstruction with Assured Data-Consistency
+">Next</a>
     
   </nav>
 
@@ -415,7 +420,7 @@ arXiv preprint arXiv:2203.08213, 2022</p>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2022 Zalan Fabian. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2023 Zalan Fabian. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

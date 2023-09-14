@@ -42,8 +42,26 @@ var store = [{
         "teaser": null
       },{
         "title": "HUMUS-Net: Hybrid unrolled multi-scale network architecture for accelerated MRI reconstruction",
-        "excerpt":"Zalan Fabian, Mahdi Soltanolkotabi arXiv preprint arXiv:2203.08213, 2022 In accelerated MRI reconstruction, the anatomy of a patient is recovered from a set of under-sampled and noisy measurements. Deep learning approaches have been proven to be successful in solving this ill-posed inverse problem and are capable of producing very high quality...","categories": [],
+        "excerpt":"Zalan Fabian, Berk Tinaz, Mahdi Soltanolkotabi Published in Advances in Neural Information Processing Systems, 2022 In accelerated MRI reconstruction, the anatomy of a patient is recovered from a set of under-sampled and noisy measurements. Deep learning approaches have been proven to be successful in solving this ill-posed inverse problem and...","categories": [],
         "tags": [],
         "url": "/publications/2022-03-15-humus-net-hybrid-unrolled-network",
+        "teaser": null
+      },{
+        "title": "DiracDiffusion: Denoising and Incremental Reconstruction with Assured Data-Consistency",
+        "excerpt":"Zalan Fabian, Berk Tinaz, Mahdi Soltanolkotabi arXiv:2303.14353 Diffusion models have established new state of the art in a multitude of computer vision tasks, including image restoration. Diffusion-based inverse problem solvers generate reconstructions of exceptional visual quality from heavily corrupted measurements. However, in what is widely known as the perception-distortion trade-off,...","categories": [],
+        "tags": [],
+        "url": "/publications/2023-03-25-diracdiffusion",
+        "teaser": null
+      },{
+        "title": "mL-BFGS: A Momentum-based L-BFGS for Distributed Large-scale Neural Network Optimization",
+        "excerpt":"Yue Niu, Zalan Fabian, Sunwoo Lee, Mahdi Soltanolkotabi, Salman Avestimehr Published in Transactions on Machine Learning Research, 2023 Quasi-Newton methods still face significant challenges in training large-scale neural networks due to additional compute costs in the Hessian related computations and instability issues in stochastic training. A well-known method, L-BFGS that...","categories": [],
+        "tags": [],
+        "url": "/publications/2023-07-01-ml-bfgs",
+        "teaser": null
+      },{
+        "title": "Don't Memorize; Mimic The Past: Federated Class Incremental Learning Without Episodic Memory",
+        "excerpt":"Sara Babakniya, Zalan Fabian, Chaoyang He, Mahdi Soltanolkotabi, Salman Avestimehr arXiv:2307.00497, 2023 Deep learning models are prone to forgetting information learned in the past when trained on new data. This problem becomes even more pronounced in the context of federated learning (FL), where data is decentralized and subject to independent...","categories": [],
+        "tags": [],
+        "url": "/publications/2023-07-02-dont-memorize-mimic-the-past",
         "teaser": null
       }]

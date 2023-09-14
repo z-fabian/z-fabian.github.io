@@ -4,7 +4,9 @@ collection: publications
 permalink: /publications/2019-07-04-generalization-guarantees-for-neural-networks
 excerpt: 'Oymak, S., Fabian, Z., Li, M. and Soltanolkotabi, M., 2019. <i> arXiv:1906.05392v2 </i>'
 date: 2019-07-04
+
 ---
+
 Samet Oymak, Zalan Fabian, Mingchen Li, Mahdi Soltanolkotabi <br>
 <i>arXiv:1906.05392v2 </i>
 
@@ -17,6 +19,7 @@ Oymak, S., Fabian, Z., Li, M. and Soltanolkotabi, M., 2019. &quot;Generalization
 {: .notice}
 
 <b>BibTeX<b>
+
 ```bibtex
 @article{oymak2019generalization,
   title={Generalization guarantees for neural networks via harnessing the low-rank structure of the jacobian},

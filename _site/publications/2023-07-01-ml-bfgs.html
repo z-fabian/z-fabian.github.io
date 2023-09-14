@@ -1,0 +1,444 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>mL-BFGS: A Momentum-based L-BFGS for Distributed Large-scale Neural Network Optimization | z-fabian</title>
+<meta name="description" content="Niu, Y., Fabian Z., Lee, S., Soltanolkotabi, M. and Avestimehr S., 2023,  Transactions on Machine Learning Research">
+
+
+  <meta name="author" content="Zalan Fabian">
+  
+  <meta property="article:author" content="Zalan Fabian">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="z-fabian">
+<meta property="og:title" content="mL-BFGS: A Momentum-based L-BFGS for Distributed Large-scale Neural Network Optimization">
+<meta property="og:url" content="http://0.0.0.0:4000/publications/2023-07-01-ml-bfgs">
+
+
+  <meta property="og:description" content="Niu, Y., Fabian Z., Lee, S., Soltanolkotabi, M. and Avestimehr S., 2023,  Transactions on Machine Learning Research">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2023-07-01T00:00:00+00:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://0.0.0.0:4000/publications/2023-07-01-ml-bfgs">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Zalan Fabian",
+      "url": "http://0.0.0.0:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="z-fabian Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          z-fabian
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/news/">News</a>
+            </li><li class="masthead__menu-item">
+              <a href="/research/">Research</a>
+            </li><li class="masthead__menu-item">
+              <a href="/publications/">Publications</a>
+            </li><li class="masthead__menu-item">
+              <a href="/experience/">Experience</a>
+            </li><li class="masthead__menu-item">
+              <a href="/assets/docs/cv_zfabian.pdf">CV</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://0.0.0.0:4000/">
+        <img src="/assets/images/bio-photo.png" alt="Zalan Fabian" itemprop="image" class=">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://0.0.0.0:4000/" itemprop="url">Zalan Fabian</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>PhD candidate at the University of Southern California.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Los Angeles, California</span>
+        </li>
+      
+
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/z-fabian/" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://linkedin.com/in/zalan-fabian" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-linkedin-in" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="https://scholar.google.com/citations?user=5EKjsXQAAAAJ&hl=en" rel="nofollow noopener noreferrer me"><i class="ai ai-fw ai-google-scholar-square ai-1x" aria-hidden="true"></i><span class="label">Google Scholar</span></a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:zfabian@usc.edu" rel="me" class="u-email">
+            <meta itemprop="email" content="zfabian@usc.edu" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="mL-BFGS: A Momentum-based L-BFGS for Distributed Large-scale Neural Network Optimization">
+    <meta itemprop="description" content="Niu, Y., Fabian Z., Lee, S., Soltanolkotabi, M. and Avestimehr S., 2023,  Transactions on Machine Learning Research">
+    <meta itemprop="datePublished" content="2023-07-01T00:00:00+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://0.0.0.0:4000/publications/2023-07-01-ml-bfgs" class="u-url" itemprop="url">mL-BFGS: A Momentum-based L-BFGS for Distributed Large-scale Neural Network Optimization
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <p>Yue Niu, Zalan Fabian, Sunwoo Lee, Mahdi Soltanolkotabi, Salman Avestimehr  <br />
+Published in <i>Transactions on Machine Learning Research</i>, 2023</p>
+
+<p>Quasi-Newton methods still face significant challenges in training large-scale neural networks due to additional compute costs in the Hessian related computations and instability issues in stochastic training.
+A well-known method, L-BFGS that efficiently approximates the Hessian using history parameter and gradient changes, suffers convergence instability in stochastic training.
+So far, attempts that adapt L-BFGS to large-scale stochastic training incur considerable extra overhead, which offsets its convergence benefits in wall-clock time.
+In this paper, we propose mL-BFGS, a lightweight momentum-based L-BFGS algorithm that paves the way for quasi-Newton (QN) methods in large-scale distributed deep neural network (DNN) optimization. 
+mL-BFGS introduces a nearly cost-free momentum scheme into L-BFGS update and greatly reduces stochastic noise in the Hessian, therefore stabilizing convergence during stochastic optimization.
+For model training at a large scale, mL-BFGS approximates a block-wise Hessian, thus enabling distributing compute and memory costs across all computing nodes.
+We provide a supporting convergence analysis for mL-BFGS in stochastic settings.
+To investigate mL-BFGS’s potential in large-scale DNN training, we train benchmark neural models using mL-BFGS and compare performance with baselines (SGD, Adam, and other quasi-Newton methods). 
+Results show that mL-BFGS achieves both noticeable iteration-wise and wall-clock speedup.</p>
+
+<p><a href="https://openreview.net/pdf?id=9jnsPp8DP3" class="btn btn--info btn--large">Paper</a></p>
+
+<p><b>Recommended citation</b></p>
+
+<p class="notice">Niu, Y., Fabian Z., Lee, S., Soltanolkotabi, M. and Avestimehr S., 2023, <i> Transactions on Machine Learning Research</i></p>
+
+<p><b>BibTeX<b></b></b></p>
+
+<div class="language-bibtex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">@article</span><span class="p">{</span><span class="nl">niu2023ml</span><span class="p">,</span>
+  <span class="na">title</span><span class="p">=</span><span class="s">{mL-BFGS: A Momentum-based L-BFGS for Distributed Large-scale Neural Network Optimization}</span><span class="p">,</span>
+  <span class="na">author</span><span class="p">=</span><span class="s">{Niu, Yue and Fabian, Zalan and Lee, Sunwoo and Soltanolkotabi, Mahdi and Avestimehr, Salman}</span><span class="p">,</span>
+  <span class="na">journal</span><span class="p">=</span><span class="s">{Transactions on Machine Learning Research}</span><span class="p">,</span>
+  <span class="na">year</span><span class="p">=</span><span class="s">{2023}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2023-07-01T00:00:00+00:00">July 1, 2023</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=mL-BFGS%3A+A+Momentum-based+L-BFGS+for+Distributed+Large-scale+Neural+Network+Optimization%20http%3A%2F%2F0.0.0.0%3A4000%2Fpublications%2F2023-07-01-ml-bfgs" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F0.0.0.0%3A4000%2Fpublications%2F2023-07-01-ml-bfgs" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2F0.0.0.0%3A4000%2Fpublications%2F2023-07-01-ml-bfgs" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/publications/2023-03-25-diracdiffusion" class="pagination--pager" title="DiracDiffusion: Denoising and Incremental Reconstruction with Assured Data-Consistency
+">Previous</a>
+    
+    
+      <a href="/publications/2023-07-02-dont-memorize-mimic-the-past" class="pagination--pager" title="Don’t Memorize; Mimic The Past: Federated Class Incremental Learning Without Episodic Memory
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://github.com/z-fabian/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://linkedin.com/in/zalan-fabian" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://scholar.google.com/citations?user=5EKjsXQAAAAJ&hl=en" rel="nofollow noopener noreferrer"><i class="ai ai-fw ai-google-scholar-square ai-1x" aria-hidden="true"></i> Google Scholar</a></li>
+        
+      
+        
+          <li><a href="mailto:zfabian@usc.edu" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 Zalan Fabian. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
