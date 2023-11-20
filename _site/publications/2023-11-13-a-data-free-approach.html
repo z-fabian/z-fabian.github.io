@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Don’t Memorize; Mimic The Past: Federated Class Incremental Learning Without Episodic Memory | z-fabian</title>
-<meta name="description" content="Babakniya, S., Fabian Z., He, C., Soltanolkotabi, M. and Avestimehr S., 2023,  arXiv:2307.00497">
+<!-- begin _includes/seo.html --><title>A Data-Free Approach to Mitigate Catastrophic Forgetting in Federated Class Incremental Learning for Vision Tasks | z-fabian</title>
+<meta name="description" content="Babakniya, S., Fabian, Z., He, C., Soltanolkotabi, M. and Avestimehr S., 2023, arXiv:2311.07784">
 
 
   <meta name="author" content="Zalan Fabian">
@@ -22,30 +22,30 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="z-fabian">
-<meta property="og:title" content="Don’t Memorize; Mimic The Past: Federated Class Incremental Learning Without Episodic Memory">
-<meta property="og:url" content="http://0.0.0.0:4000/publications/2023-07-02-dont-memorize-mimic-the-past">
+<meta property="og:title" content="A Data-Free Approach to Mitigate Catastrophic Forgetting in Federated Class Incremental Learning for Vision Tasks">
+<meta property="og:url" content="/publications/2023-11-13-a-data-free-approach">
 
 
-  <meta property="og:description" content="Babakniya, S., Fabian Z., He, C., Soltanolkotabi, M. and Avestimehr S., 2023,  arXiv:2307.00497">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2023-07-02T00:00:00+00:00">
+  <meta property="og:description" content="Babakniya, S., Fabian, Z., He, C., Soltanolkotabi, M. and Avestimehr S., 2023, arXiv:2311.07784">
 
 
 
 
 
-  
+
+
+  <meta property="article:published_time" content="2023-11-13T00:00:00-06:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://0.0.0.0:4000/publications/2023-07-02-dont-memorize-mimic-the-past">
+
+<link rel="canonical" href="/publications/2023-11-13-a-data-free-approach">
 
 
 
@@ -56,7 +56,7 @@
     
       "@type": "Person",
       "name": "Zalan Fabian",
-      "url": "http://0.0.0.0:4000/"
+      "url": "/"
     
   }
 </script>
@@ -161,7 +161,7 @@
 
   
     <div class="author__avatar">
-      <a href="http://0.0.0.0:4000/">
+      <a href="/">
         <img src="/assets/images/bio-photo.png" alt="Zalan Fabian" itemprop="image" class=">
       </a>
     </div>
@@ -169,7 +169,7 @@
 
   <div class="author__content">
     <h3 class="author__name p-name" itemprop="name">
-      <a class="u-url" rel="me" href="http://0.0.0.0:4000/" itemprop="url">Zalan Fabian</a>
+      <a class="u-url" rel="me" href="/" itemprop="url">Zalan Fabian</a>
     </h3>
     
       <div class="author__bio p-note" itemprop="description">
@@ -284,16 +284,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Don’t Memorize; Mimic The Past: Federated Class Incremental Learning Without Episodic Memory">
-    <meta itemprop="description" content="Babakniya, S., Fabian Z., He, C., Soltanolkotabi, M. and Avestimehr S., 2023,  arXiv:2307.00497">
-    <meta itemprop="datePublished" content="2023-07-02T00:00:00+00:00">
+    <meta itemprop="headline" content="A Data-Free Approach to Mitigate Catastrophic Forgetting in Federated Class Incremental Learning for Vision Tasks">
+    <meta itemprop="description" content="Babakniya, S., Fabian, Z., He, C., Soltanolkotabi, M. and Avestimehr S., 2023, arXiv:2311.07784">
+    <meta itemprop="datePublished" content="2023-11-13T00:00:00-06:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://0.0.0.0:4000/publications/2023-07-02-dont-memorize-mimic-the-past" class="u-url" itemprop="url">Don’t Memorize; Mimic The Past: Federated Class Incremental Learning Without Episodic Memory
+            <a href="/publications/2023-11-13-a-data-free-approach" class="u-url" itemprop="url">A Data-Free Approach to Mitigate Catastrophic Forgetting in Federated Class Incremental Learning for Vision Tasks
 </a>
           </h1>
           
@@ -305,23 +305,23 @@
       <section class="page__content e-content" itemprop="text">
         
         <p>Sara Babakniya, Zalan Fabian, Chaoyang He, Mahdi Soltanolkotabi, Salman Avestimehr  <br />
-<i>arXiv:2307.00497</i>, 2023</p>
+<i>arXiv:2311.07784</i>, 2023</p>
 
-<p>Deep learning models are prone to forgetting information learned in the past when trained on new data. This problem becomes even more pronounced in the context of federated learning (FL), where data is decentralized and subject to independent changes for each user. Continual Learning (CL) studies this so-called \textit{catastrophic forgetting} phenomenon primarily in centralized settings, where the learner has direct access to the complete training dataset. However, applying CL techniques to FL is not straightforward due to privacy concerns and resource limitations. This paper presents a framework for federated class incremental learning that utilizes a generative model to synthesize samples from past distributions instead of storing part of past data. Then, clients can leverage the generative model to mitigate catastrophic forgetting locally. The generative model is trained on the server using data-free methods at the end of each task without requesting data from clients. Therefore, it reduces the risk of data leakage as opposed to training it on the client’s private data. We demonstrate significant improvements for the CIFAR-100 dataset compared to existing baselines.</p>
+<p>Deep learning models often suffer from forgetting previously learned information when trained on new data. This problem is exacerbated in federated learning (FL), where the data is distributed and can change independently for each user. Many solutions are proposed to resolve this catastrophic forgetting in a centralized setting. However, they do not apply directly to FL because of its unique complexities, such as privacy concerns and resource limitations. To overcome these challenges, this paper presents a framework for <strong>federated class incremental learning</strong> that utilizes a generative model to synthesize samples from past distributions. This data can be later exploited alongside the training data to mitigate catastrophic forgetting. To preserve privacy, the generative model is trained on the server using data-free methods at the end of each task without requesting data from clients. Moreover, our solution does not demand the users to store old data or models, which gives them the freedom to join/leave the training at any time. Additionally, we introduce SuperImageNet, a new regrouping of the ImageNet dataset specifically tailored for federated continual learning. We demonstrate significant improvements compared to existing baselines through extensive experiments on multiple datasets.</p>
 
-<p><a href="https://arxiv.org/pdf/2307.00497.pdf" class="btn btn--inverse btn--large">
+<p><a href="https://arxiv.org/pdf/2311.07784.pdf" class="btn btn--inverse btn--large">
 <i class="ai ai-arxiv ai-lg "></i> arXiv</a></p>
 
 <p><b>Recommended citation</b></p>
 
-<p class="notice">Babakniya, S., Fabian Z., He, C., Soltanolkotabi, M. and Avestimehr S., 2023, Don’t Memorize; Mimic The Past: Federated Class Incremental Learning Without Episodic Memory, <i> arXiv:2307.00497</i></p>
+<p class="notice">Babakniya, S., Fabian, Z., He, C., Soltanolkotabi, M. and Avestimehr S., 2023, A Data-Free Approach to Mitigate Catastrophic Forgetting in Federated Class Incremental Learning for Vision Tasks, <i> arXiv:2311.07784</i></p>
 
 <p><b>BibTeX<b></b></b></p>
 
-<div class="language-bibtex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">@article</span><span class="p">{</span><span class="nl">babakniya2023don</span><span class="p">,</span>
-  <span class="na">title</span><span class="p">=</span><span class="s">{Don't Memorize; Mimic The Past: Federated Class Incremental Learning Without Episodic Memory}</span><span class="p">,</span>
+<div class="language-bibtex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">@article</span><span class="p">{</span><span class="nl">babakniya2023data</span><span class="p">,</span>
+  <span class="na">title</span><span class="p">=</span><span class="s">{A Data-Free Approach to Mitigate Catastrophic Forgetting in Federated Class Incremental Learning for Vision Tasks}</span><span class="p">,</span>
   <span class="na">author</span><span class="p">=</span><span class="s">{Babakniya, Sara and Fabian, Zalan and He, Chaoyang and Soltanolkotabi, Mahdi and Avestimehr, Salman}</span><span class="p">,</span>
-  <span class="na">journal</span><span class="p">=</span><span class="s">{arXiv preprint arXiv:2307.00497}</span><span class="p">,</span>
+  <span class="na">journal</span><span class="p">=</span><span class="s">{arXiv preprint arXiv:2311.07784}</span><span class="p">,</span>
   <span class="na">year</span><span class="p">=</span><span class="s">{2023}</span>
 <span class="p">}</span>
 </code></pre></div></div>
@@ -336,7 +336,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2023-07-02T00:00:00+00:00">July 2, 2023</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2023-11-13T00:00:00-06:00">November 13, 2023</time></p>
 
       </footer>
 
@@ -345,18 +345,18 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Don%27t+Memorize%3B+Mimic+The+Past%3A+Federated+Class+Incremental+Learning+Without+Episodic+Memory%20http%3A%2F%2F0.0.0.0%3A4000%2Fpublications%2F2023-07-02-dont-memorize-mimic-the-past" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=A+Data-Free+Approach+to+Mitigate+Catastrophic+Forgetting+in+Federated+Class+Incremental+Learning+for+Vision+Tasks%20%2Fpublications%2F2023-11-13-a-data-free-approach" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F0.0.0.0%3A4000%2Fpublications%2F2023-07-02-dont-memorize-mimic-the-past" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=%2Fpublications%2F2023-11-13-a-data-free-approach" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2F0.0.0.0%3A4000%2Fpublications%2F2023-07-02-dont-memorize-mimic-the-past" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2Fpublications%2F2023-11-13-a-data-free-approach" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/publications/2023-07-01-ml-bfgs" class="pagination--pager" title="mL-BFGS: A Momentum-based L-BFGS for Distributed Large-scale Neural Network Optimization
+      <a href="/publications/2023-11-02-multimodal-foundation-models" class="pagination--pager" title="Multimodal Foundation Models for Zero-shot Animal Species Recognition in Camera Trap Images
 ">Previous</a>
     
     

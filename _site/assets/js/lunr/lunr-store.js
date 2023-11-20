@@ -59,9 +59,21 @@ var store = [{
         "url": "/publications/2023-07-01-ml-bfgs",
         "teaser": null
       },{
-        "title": "Don't Memorize; Mimic The Past: Federated Class Incremental Learning Without Episodic Memory",
-        "excerpt":"Sara Babakniya, Zalan Fabian, Chaoyang He, Mahdi Soltanolkotabi, Salman Avestimehr arXiv:2307.00497, 2023 Deep learning models are prone to forgetting information learned in the past when trained on new data. This problem becomes even more pronounced in the context of federated learning (FL), where data is decentralized and subject to independent...","categories": [],
+        "title": "Adapt and Diffuse: Sample-adaptive Reconstruction via Latent Diffusion Models",
+        "excerpt":"Zalan Fabian, Berk Tinaz, Mahdi Soltanolkotabi arXiv:2309.06642, 2023 Inverse problems arise in a multitude of applications, where the goal is to recover a clean signal from noisy and possibly (non)linear observations. The difficulty of a reconstruction problem depends on multiple factors, such as the structure of the ground truth signal,...","categories": [],
         "tags": [],
-        "url": "/publications/2023-07-02-dont-memorize-mimic-the-past",
+        "url": "/publications/2023-09-12-adapt-and-diffuse",
+        "teaser": null
+      },{
+        "title": "Multimodal Foundation Models for Zero-shot Animal Species Recognition in Camera Trap Images",
+        "excerpt":"Zalan Fabian, Zhongqi Miao, Chunyuan Li, Yuanhan Zhang, Ziwei Liu, Andrés Hernández, Andrés Montes-Rojas, Rafael Escucha, Laura Siabatto, Andrés Link, Pablo Arbeláez, Rahul Dodhia, Juan Lavista Ferres arXiv:2311.01064, 2023 Due to deteriorating environmental conditions and increasing human activity, conservation efforts directed towards wildlife is crucial. Motion-activated camera traps constitute an...","categories": [],
+        "tags": [],
+        "url": "/publications/2023-11-02-multimodal-foundation-models",
+        "teaser": null
+      },{
+        "title": "A Data-Free Approach to Mitigate Catastrophic Forgetting in Federated Class Incremental Learning for Vision Tasks",
+        "excerpt":"Sara Babakniya, Zalan Fabian, Chaoyang He, Mahdi Soltanolkotabi, Salman Avestimehr arXiv:2311.07784, 2023 Deep learning models often suffer from forgetting previously learned information when trained on new data. This problem is exacerbated in federated learning (FL), where the data is distributed and can change independently for each user. Many solutions are...","categories": [],
+        "tags": [],
+        "url": "/publications/2023-11-13-a-data-free-approach",
         "teaser": null
       }]

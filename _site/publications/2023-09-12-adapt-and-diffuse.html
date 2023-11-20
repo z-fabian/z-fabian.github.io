@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>mL-BFGS: A Momentum-based L-BFGS for Distributed Large-scale Neural Network Optimization | z-fabian</title>
-<meta name="description" content="Niu, Y., Fabian Z., Lee, S., Soltanolkotabi, M. and Avestimehr S., 2023,  Transactions on Machine Learning Research">
+<!-- begin _includes/seo.html --><title>Adapt and Diffuse: Sample-adaptive Reconstruction via Latent Diffusion Models | z-fabian</title>
+<meta name="description" content="Fabian, Z., Tinaz, B., Soltanolkotabi, M., 2023, arXiv:2309.06642">
 
 
   <meta name="author" content="Zalan Fabian">
@@ -22,30 +22,30 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="z-fabian">
-<meta property="og:title" content="mL-BFGS: A Momentum-based L-BFGS for Distributed Large-scale Neural Network Optimization">
-<meta property="og:url" content="/publications/2023-07-01-ml-bfgs">
+<meta property="og:title" content="Adapt and Diffuse: Sample-adaptive Reconstruction via Latent Diffusion Models">
+<meta property="og:url" content="/publications/2023-09-12-adapt-and-diffuse">
 
 
-  <meta property="og:description" content="Niu, Y., Fabian Z., Lee, S., Soltanolkotabi, M. and Avestimehr S., 2023,  Transactions on Machine Learning Research">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2023-07-01T00:00:00-05:00">
+  <meta property="og:description" content="Fabian, Z., Tinaz, B., Soltanolkotabi, M., 2023, arXiv:2309.06642">
 
 
 
 
 
-  
+
+
+  <meta property="article:published_time" content="2023-09-12T00:00:00-05:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="/publications/2023-07-01-ml-bfgs">
+
+<link rel="canonical" href="/publications/2023-09-12-adapt-and-diffuse">
 
 
 
@@ -284,16 +284,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="mL-BFGS: A Momentum-based L-BFGS for Distributed Large-scale Neural Network Optimization">
-    <meta itemprop="description" content="Niu, Y., Fabian Z., Lee, S., Soltanolkotabi, M. and Avestimehr S., 2023,  Transactions on Machine Learning Research">
-    <meta itemprop="datePublished" content="2023-07-01T00:00:00-05:00">
+    <meta itemprop="headline" content="Adapt and Diffuse: Sample-adaptive Reconstruction via Latent Diffusion Models">
+    <meta itemprop="description" content="Fabian, Z., Tinaz, B., Soltanolkotabi, M., 2023, arXiv:2309.06642">
+    <meta itemprop="datePublished" content="2023-09-12T00:00:00-05:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="/publications/2023-07-01-ml-bfgs" class="u-url" itemprop="url">mL-BFGS: A Momentum-based L-BFGS for Distributed Large-scale Neural Network Optimization
+            <a href="/publications/2023-09-12-adapt-and-diffuse" class="u-url" itemprop="url">Adapt and Diffuse: Sample-adaptive Reconstruction via Latent Diffusion Models
 </a>
           </h1>
           
@@ -304,31 +304,24 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <p>Yue Niu, Zalan Fabian, Sunwoo Lee, Mahdi Soltanolkotabi, Salman Avestimehr  <br />
-Published in <i>Transactions on Machine Learning Research</i>, 2023</p>
+        <p>Zalan Fabian, Berk Tinaz, Mahdi Soltanolkotabi<br />
+<i>arXiv:2309.06642</i>, 2023</p>
 
-<p>Quasi-Newton methods still face significant challenges in training large-scale neural networks due to additional compute costs in the Hessian related computations and instability issues in stochastic training.
-A well-known method, L-BFGS that efficiently approximates the Hessian using history parameter and gradient changes, suffers convergence instability in stochastic training.
-So far, attempts that adapt L-BFGS to large-scale stochastic training incur considerable extra overhead, which offsets its convergence benefits in wall-clock time.
-In this paper, we propose mL-BFGS, a lightweight momentum-based L-BFGS algorithm that paves the way for quasi-Newton (QN) methods in large-scale distributed deep neural network (DNN) optimization. 
-mL-BFGS introduces a nearly cost-free momentum scheme into L-BFGS update and greatly reduces stochastic noise in the Hessian, therefore stabilizing convergence during stochastic optimization.
-For model training at a large scale, mL-BFGS approximates a block-wise Hessian, thus enabling distributing compute and memory costs across all computing nodes.
-We provide a supporting convergence analysis for mL-BFGS in stochastic settings.
-To investigate mL-BFGS’s potential in large-scale DNN training, we train benchmark neural models using mL-BFGS and compare performance with baselines (SGD, Adam, and other quasi-Newton methods). 
-Results show that mL-BFGS achieves both noticeable iteration-wise and wall-clock speedup.</p>
+<p>Inverse problems arise in a multitude of applications, where the goal is to recover a clean signal from noisy and possibly (non)linear observations. The difficulty of a reconstruction problem depends on multiple factors, such as the structure of the ground truth signal, the severity of the degradation, the implicit bias of the reconstruction model and the complex interactions between the above factors. This results in natural sample-by-sample variation in the difficulty of a reconstruction task, which is often overlooked by contemporary techniques. Recently, diffusion-based inverse problem solvers have established new state-of-the-art in various reconstruction tasks. However, they have the drawback of being computationally prohibitive. Our key observation in this paper is that most existing solvers lack the ability to adapt their compute power to the difficulty of the reconstruction task, resulting in long inference times, subpar performance and wasteful resource allocation. We propose a novel method that we call severity encoding, to estimate the degradation severity of noisy, degraded signals in the latent space of an autoencoder. We show that the estimated severity has strong correlation with the true corruption level and can give useful hints at the difficulty of reconstruction problems on a sample-by-sample basis. Furthermore, we propose a reconstruction method based on latent diffusion models that leverages the predicted degradation severities to fine-tune the reverse diffusion sampling trajectory and thus achieve sample-adaptive inference times. We utilize latent diffusion posterior sampling to maintain data consistency with observations. We perform experiments on both linear and nonlinear inverse problems and demonstrate that our technique achieves performance comparable to state-of-the-art diffusion-based techniques, with significant improvements in computational efficiency.</p>
 
-<p><a href="https://openreview.net/pdf?id=9jnsPp8DP3" class="btn btn--info btn--large">Paper</a></p>
+<p><a href="https://arxiv.org/pdf/2309.06642.pdf" class="btn btn--inverse btn--large">
+<i class="ai ai-arxiv ai-lg "></i> arXiv</a></p>
 
 <p><b>Recommended citation</b></p>
 
-<p class="notice">Niu, Y., Fabian Z., Lee, S., Soltanolkotabi, M. and Avestimehr S., 2023, <i> Transactions on Machine Learning Research</i></p>
+<p class="notice">Fabian, Z., Tinaz, B., Soltanolkotabi, M., 2023, Adapt and Diffuse: Sample-adaptive Reconstruction via Latent Diffusion Models, <i> arXiv:2309.06642</i></p>
 
 <p><b>BibTeX<b></b></b></p>
 
-<div class="language-bibtex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">@article</span><span class="p">{</span><span class="nl">niu2023ml</span><span class="p">,</span>
-  <span class="na">title</span><span class="p">=</span><span class="s">{mL-BFGS: A Momentum-based L-BFGS for Distributed Large-scale Neural Network Optimization}</span><span class="p">,</span>
-  <span class="na">author</span><span class="p">=</span><span class="s">{Niu, Yue and Fabian, Zalan and Lee, Sunwoo and Soltanolkotabi, Mahdi and Avestimehr, Salman}</span><span class="p">,</span>
-  <span class="na">journal</span><span class="p">=</span><span class="s">{Transactions on Machine Learning Research}</span><span class="p">,</span>
+<div class="language-bibtex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">@article</span><span class="p">{</span><span class="nl">fabian2023adapt</span><span class="p">,</span>
+  <span class="na">title</span><span class="p">=</span><span class="s">{Adapt and Diffuse: Sample-adaptive Reconstruction via Latent Diffusion Models}</span><span class="p">,</span>
+  <span class="na">author</span><span class="p">=</span><span class="s">{Fabian, Zalan and Tinaz, Berk and Soltanolkotabi, Mahdi}</span><span class="p">,</span>
+  <span class="na">journal</span><span class="p">=</span><span class="s">{arXiv preprint arXiv:2309.06642}</span><span class="p">,</span>
   <span class="na">year</span><span class="p">=</span><span class="s">{2023}</span>
 <span class="p">}</span>
 </code></pre></div></div>
@@ -343,7 +336,7 @@ Results show that mL-BFGS achieves both noticeable iteration-wise and wall-clock
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2023-07-01T00:00:00-05:00">July 1, 2023</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2023-09-12T00:00:00-05:00">September 12, 2023</time></p>
 
       </footer>
 
@@ -352,22 +345,22 @@ Results show that mL-BFGS achieves both noticeable iteration-wise and wall-clock
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=mL-BFGS%3A+A+Momentum-based+L-BFGS+for+Distributed+Large-scale+Neural+Network+Optimization%20%2Fpublications%2F2023-07-01-ml-bfgs" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Adapt+and+Diffuse%3A+Sample-adaptive+Reconstruction+via+Latent+Diffusion+Models%20%2Fpublications%2F2023-09-12-adapt-and-diffuse" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=%2Fpublications%2F2023-07-01-ml-bfgs" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=%2Fpublications%2F2023-09-12-adapt-and-diffuse" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2Fpublications%2F2023-07-01-ml-bfgs" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2Fpublications%2F2023-09-12-adapt-and-diffuse" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/publications/2023-03-25-diracdiffusion" class="pagination--pager" title="DiracDiffusion: Denoising and Incremental Reconstruction with Assured Data-Consistency
+      <a href="/publications/2023-07-01-ml-bfgs" class="pagination--pager" title="mL-BFGS: A Momentum-based L-BFGS for Distributed Large-scale Neural Network Optimization
 ">Previous</a>
     
     
-      <a href="/publications/2023-09-12-adapt-and-diffuse" class="pagination--pager" title="Adapt and Diffuse: Sample-adaptive Reconstruction via Latent Diffusion Models
+      <a href="/publications/2023-11-02-multimodal-foundation-models" class="pagination--pager" title="Multimodal Foundation Models for Zero-shot Animal Species Recognition in Camera Trap Images
 ">Next</a>
     
   </nav>

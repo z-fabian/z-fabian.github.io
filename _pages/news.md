@@ -5,6 +5,30 @@ permalink: /news/
 author_profile: true
 classes: wide
 
+feature_row14:
+
+- image_path: assets/images/NeurIPS-logo-wide.png
+  title: "11/20/2023"
+  excerpt: "As NeurIPS 2023 is coming up, I am happy to share that we are going to present some interesting results both in the main track and at various workshops.
+
+- [**A Data-Free Approach to Mitigate Catastrophic Forgetting in Federated Class Incremental Learning for Vision Tasks**](https://arxiv.org/abs/2311.07784): Our work on mitigating catastrophic forgetting in continual learning in a federated setting using a data-free generative approach will be presented as a poster in the main track.
+
+- [**Adapt and Diffuse: Sample-adaptive Reconstruction via Latent Diffusion Models**](https://arxiv.org/abs/2309.06642): Our lab is going to participate in the Deep Learning and Inverse Problems Workshop presenting our recent work on sample-adaptive image reconstruction leveraging latent diffusion models.
+
+- [**Multimodal Foundation Models for Zero-shot Animal Species Recognition in Camera Trap Images**](https://arxiv.org/abs/2311.01064): My collaboration with Microsoft's AI for Good lab on zero-shot wildlife recognition using multimodal foundation models will be presented as a poster at the Instruction Workshop.
+
+  "
+
+feature_row13:
+
+- image_path: assets/images/wildmatch-overview.png
+  title: "11/02/2023"
+  excerpt: "After a summer of amazing research collaboration with Microsoft's AI for Good lab on advancing wildlife conservation efforts, we are eager to announce that a preliminary version of our work has been published on arXiv. We investigate how multimodal foundation models can aid biologists in automatically identifying animal species in camera trap imagery.
+  Our proposed technique, WildMatch, can greatly reduce the cost of image analysis, as it requires no expert-labelled training data. We leverage the rich visual understanding capabilities of pre-trained vision-language foundation models, and adapt them for detailed visual description generation of animals. Then, we find the closest match in an external knowledge base of animal descriptions built from Wikipedia and other publicly available sources. This is still a work in progress with additional results coming soon."
+  url: "https://arxiv.org/abs/2311.01064"
+  btn_label: "arXiv"
+  btn_class: "btn--primary"
+
 feature_row12:
 
 - image_path: assets/images/diracdiffusion.png
@@ -134,6 +158,8 @@ feature_row0:
   btn_class: "btn--primary"
 
 ---
+{% include feature_row id="feature_row14" type="left" %}
+{% include feature_row id="feature_row13" type="left" %}
 {% include feature_row id="feature_row12" type="left" %}
 {% include feature_row id="feature_row11" type="left" %}
 {% include feature_row id="feature_row10" type="left" %}
