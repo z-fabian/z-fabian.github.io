@@ -2,7 +2,7 @@
 title: "Coordination of multi-agent leader-follower system with time-varying objective function"
 collection: publications
 permalink: /publications/2016-12-12-coordination-of-multi-agent-leader-follower-system
-excerpt: 'Fabian, Z. and Yoon, S.Y., 2016. <i>Conference on Decision and Control</i>. (pp. 69-74). IEEE.'
+excerpt: 'Fabian, Z. and Yoon, S.Y., CDC 2016'
 date: 2016-12-12
 ---
 Zalan Fabian, Se Young Yoon <br>

@@ -1,8 +1,8 @@
 ---
-title: "Data augmentation for deep learning based accelerated MRI reconstruction with limited data"
+title: "[Spotlight] Data augmentation for deep learning based accelerated MRI reconstruction with limited data"
 collection: publications
 permalink: /publications/2021-07-01-data-augmentation-for-deep-learning
-excerpt: 'Fabian, Z., Heckel, R. and Soltanolkotabi, M., 2021, July. In <i> International Conference on Machine Learning </i> (pp. 3057-3067). PMLR.'
+excerpt: 'Fabian, Z., Heckel, R. and Soltanolkotabi, M., ICML 2021'
 date: 2021-07-01
 ---
 Zalan Fabian, Reinhard Heckel, Mahdi Soltanolkotabi <br>

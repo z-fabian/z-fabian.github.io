@@ -4,11 +4,11 @@ main:
     url: /
   - title: "News"
     url: /news/
-  - title: "Research"
-    url: /research/
+  # - title: "Research"
+  #   url: /research/
   - title: "Publications"
     url: /publications/
-  - title: "Experience"
-    url: /experience/
+  # - title: "Experience"
+  #   url: /experience/
   - title: "CV"
     url: /assets/docs/cv_zfabian.pdf

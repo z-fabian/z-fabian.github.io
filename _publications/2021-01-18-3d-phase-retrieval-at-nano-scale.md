@@ -2,7 +2,7 @@
 title: "3D phase retrieval at nano-scale via accelerated Wirtinger flow"
 collection: publications
 permalink: /publications/2021-01-18-3d-phase-retrieval-at-nano-scale
-excerpt: 'Fabian, Z., Haldar, J., Leahy, R. and Soltanolkotabi, M., 2021, January. In <i> European Signal Processing Conference </i> (pp. 2080--2084). IEEE.'
+excerpt: 'Fabian, Z., Haldar, J., Leahy, R. and Soltanolkotabi, M., EUSIPCO 2021'
 date: 2021-01-18
 ---
 Zalan Fabian, Justin Haldar, Richard Leahy, Mahdi Soltanolkotabi <br>

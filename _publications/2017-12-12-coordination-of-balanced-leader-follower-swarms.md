@@ -2,7 +2,7 @@
 title: "Coordination of balanced leader-follower swarms with time-varying social potential functions"
 collection: publications
 permalink: /publications/2017-12-12-coordination-of-balanced-leader-follower-swarms
-excerpt: 'Fabian, Z. and Yoon, S.Y., 2017. <i>Conference on Decision and Control</i>. (pp. 1008-1013). IEEE.'
+excerpt: 'Fabian, Z. and Yoon, S.Y., CDC 2017'
 date: 2017-12-12
 ---
 Zalan Fabian, Se Young Yoon <br>

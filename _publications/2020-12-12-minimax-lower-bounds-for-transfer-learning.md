@@ -2,7 +2,7 @@
 title: "Minimax lower bounds for transfer learning with linear and one-hidden layer neural networks"
 collection: publications
 permalink: /publications/2020-12-12-minimax-lower-bounds-for-transfer-learning
-excerpt: 'Mousavi Kalan, M., Fabian, Z., Avestimehr, S. and Soltanolkotabi, M., 2020. In <i> Advances in Neural Information Processing Systems </i> (1959-1969).'
+excerpt: 'Mousavi Kalan, M., Fabian, Z., Avestimehr, S. and Soltanolkotabi, M., NeurIPS 2020'
 date: 2020-12-12
 ---
 Mohammadreza Mousavi Kalan, Zalan Fabian, Salman Avestimehr, Mahdi Soltanolkotabi <br>

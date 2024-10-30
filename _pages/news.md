@@ -5,6 +5,63 @@ permalink: /news/
 author_profile: true
 classes: wide
 
+feature_row17:
+
+- image_path: assets/images/NeurIPS-logo-wide.png
+  title: "10/30/2024"
+  excerpt: "I'm looking forward to attending NeurIPS 2024 in Vancouver, where we will be presenting preliminary work for two of our most recent projects in workshops this year.
+
+    - **ProPicker: Promptable Segmentation for Particle Picking in Cryogenic Electron Tomography**: Cryogenic Electron Tomography (Cryo-ET) is a crucial imaging technique with the unique ability to image biological macromolecules (e.g. proteins, lipids) in their native cellular environment. We introduce a novel framework for detecting and classifying macromolecules in 3D volumes that greatly accelerates the detection pipeline, and offers rapid adaptation to new and unseen proteins. Our work will be presented as a poster at the *Machine Learning in Structural Biology Workshop*. This research is the outcome of a fantastic collaboration between our group and Simon Wiedemann and Reinhard Heckel at TUM.
+
+    - [**MediConfusion: Can you trust your AI radiologist? Probing the reliability of multimodal medical foundation models**](https://arxiv.org/pdf/2409.15477): We present our work on stress-testing the visual reasoning capabilities of medical foundation models at two workshops: *AIM-FM: Advancements In Medical Foundation Models* and *Responsibly Building the Next Generation of Multimodal Foundational Models Workshop*
+    
+
+I'm eager to connect with colleagues and engage in discussions about AI for science, healthcare and aspects of reliability!
+"
+
+feature_row16:
+
+- image_path: assets/images/mediconfusion-logo-wide.png
+  title: "09/25/2024"
+  excerpt: "Excited to announce **MediConfusion**, our new medical evaluation benchmark for Multimodal Large Language Models (MLLMs). 
+
+MediConfusion is a challenging medical Visual Question Answering (VQA) benchmark designed to test the vision capabilities of medical MLLMs. Our findings reveal several critical failures:
+
+- All available models — both open-source and proprietary, even those specifically designed for medical applications — performed below random guessing on MediConfusion.
+
+- State-of-the-art models are easily confused by image pairs that are otherwise visually dissimilar and clearly distinct for medical experts.
+
+- These results raise serious questions about the reliability of current medical MLLMs for healthcare deployment.
+
+
+We also identified common patterns of model failure, which we hope will guide the development of a new generation of more trustworthy and reliable MLLMs in healthcare. This is just the first step towards a more comprehensive benchmark with more medical subspecialties, categories, and samples yet to come, so stay tuned! 
+"
+  url: "https://arxiv.org/pdf/2409.15477"
+  btn_label: "ArXiv"
+  btn_class: "btn--primary"
+  url2: "https://sites.usc.edu/aif4s/2024/09/25/mediconfusion/"
+  btn_label2: "Blog"
+  btn_class2: "btn--primary"
+  url3: "https://github.com/MShahabSepehri/MediConfusion"
+  btn_label3: "Code"
+  btn_class3: "btn--primary"
+
+feature_row15:
+
+- image_path: assets/images/ICML-logo-wide.png
+  title: "07/15/2024"
+  excerpt: "I'm pleased to share that I’ll be attending ICML 2024 in Vienna, with two main track papers accepted this year, including a Spotlight, as well as some exciting preliminary work.   
+
+- [**[Spotlight] Adapt and Diffuse: Sample-adaptive Reconstruction via Latent Diffusion Models**](https://openreview.net/pdf/c0010f659cac8e5485a5020c696bf0520bbb0ead.pdf): In this work, we improve the efficiency of diffusion-based inverse problem solvers by adapting the sampling trajectory to the degraded input image. We do this by first estimating how severly degraded the corrupted input is, then we use this degradation severity to find an optimal starting time in the diffusion process. We achieve up to 10x speedup in sampling speed as well as improved reconstruction quality.
+
+- [**DiracDiffusion: Denoising and Incremental Reconstruction with Assured Data-Consistency**](https://openreview.net/pdf/2e0d4e76462e0bf7282e6918745a486eb43eae21.pdf): We propose a novel diffusion-based framework for inverse problem solving: we model image corruption as a stochastic degradation process that gradually degrades and noises the clean image. We learn to reverse this corruption process and incrementally add more and more detail back to images. By leveraging early-stopping, we can flexibly trade off perceptual quality (how 'nice' the image looks) for better distortion metrics (faithfulness to the observation) or vice versa.
+
+- [**[Workshop] Serpent: Scalable and Efficient Image Restoration via Multi-scale Structured State Space Models**](https://arxiv.org/pdf/2403.17902): We explore the potential of Structured State Space Models for image restoration. We introduce a novel architecture that converts the input image into a collection of sequences and leverages state space models as the fundamental computation block. We observe great improvements in model eficiency: reduced compute cost, lower GPU memory requirements and faster inference, and performance on par with state-of-the-art architectures! Our work will be presented at the Next Generation of Sequence Modeling Architectures Workshop.
+
+
+Looking forward to productive discussions and new connections!
+"
+
 feature_row14:
 
 - image_path: assets/images/NeurIPS-logo-wide.png
@@ -26,15 +83,6 @@ feature_row13:
   excerpt: "After a summer of amazing research collaboration with Microsoft's AI for Good lab on advancing wildlife conservation efforts, we are eager to announce that a preliminary version of our work has been published on arXiv. We investigate how multimodal foundation models can aid biologists in automatically identifying animal species in camera trap imagery.
   Our proposed technique, WildMatch, can greatly reduce the cost of image analysis, as it requires no expert-labelled training data. We leverage the rich visual understanding capabilities of pre-trained vision-language foundation models, and adapt them for detailed visual description generation of animals. Then, we find the closest match in an external knowledge base of animal descriptions built from Wikipedia and other publicly available sources. This is still a work in progress with additional results coming soon."
   url: "https://arxiv.org/abs/2311.01064"
-  btn_label: "arXiv"
-  btn_class: "btn--primary"
-
-feature_row12:
-
-- image_path: assets/images/diracdiffusion.png
-  title: "03/25/2023"
-  excerpt: "The pre-print version of our new paper *DiracDiffusion: Denoising and Incremental Reconstruction with Assured Data-Consistency* is now available on arXiv. In this work, we propose a novel diffusion-based framework for inverse problem solving: we assume that the observation comes from a stochastic degradation process that gradually degrades and noises the original clean image. We reverse this corruption process in order to incrementally add more and more detail back to images. By leveraging early-stopping we can freely trade off perceptual quality (how 'nice' and realistic an image looks) for better distortion metrics (how faithful it is to our observation) or vice versa."
-  url: "https://arxiv.org/pdf/2303.14353.pdf"
   btn_label: "arXiv"
   btn_class: "btn--primary"
 
@@ -71,21 +119,6 @@ feature_row8:
   title: "05/19/2022"
   excerpt: "I am very excited to share that I will be joining Amazon's Alexa Perceptual Technologies as an Applied Scientist Intern for the summer under the mentorship of Rajath Kumar. We are going to work on improving wake word verification models through semi-supervised learning techniques and data augmentation. I am looking forward to collaborating with Amazon researchers and learning more about their work."
 
-feature_row7:
-
-- image_path: assets/images/humus-net.png
-  title: "03/15/2022"
-  excerpt: "We published a preprint version of our new work on HUMUS-Net: a Transformer-convolutional hybrid model for accelerated MRI reconstruction. Common deep learning reconstruction techniques in MRI typically utilize convolution layers as the primary processing unit, however convolution kernels struggle to model long-range pixel dependencies in images and are content-independent. On the other hand, Transformer architectures are free from these limitations and are rapidly gaining ground in a range of vision applications. Our proposed architecture combines the benefits of both worlds and [achieves state-of-the-art results](https://fastmri.org/leaderboards) on the [fastMRI dataset](https://fastmri.med.nyu.edu/), the largest publicly available MRI dataset."
-  url: "https://arxiv.org/abs/2203.08213"
-  btn_label: "Paper"
-  btn_class: "btn--primary"
-  url2: "/assets/slides/HUMUS_Net_slides.pdf"
-  btn_label2: "Slides"
-  btn_class2: "btn--primary"
-  url3: "https://github.com/z-fabian/HUMUS-Net"
-  btn_label3: "Code"
-  btn_class3: "btn--primary"
-
 feature_row6:
 
 - image_path: assets/images/research-festival2021-poster-small.png
@@ -116,16 +149,6 @@ feature_row4:
   btn_label2: "Code"
   btn_class2: "btn--primary"
 
-feature_row3:
-
-- image_path: assets/images/byol-pic.png
-  image_caption: "Grill et al., Bootstrap Your Own Latent - A New Approach to Self-Supervised Learning, NeurIPS, 2020"
-  title: "03/12/2021"
-  excerpt: "I gave a talk on two popular self-supervised learning techniques [BYOL (Grill et al.)](https://proceedings.neurips.cc/paper/2020/hash/f3ada80d5c4ee70142b17b8192b2958e-Abstract.html) and [SimSiam (Chen et al.)](https://openaccess.thecvf.com/content/CVPR2021/html/Chen_Exploring_Simple_Siamese_Representation_Learning_CVPR_2021_paper.html) at our _Learning from Signals and Data_ journal club. Self-supervised learning algorithms have been rapidly catching up with supervised methods recently. They typically build upon a siamese architecture that can learn good image representations from unlabelled data. Thus, these methods have great potential in scientific applications where labelled training data is scarce or extremely costly to acquire."
-  url: "/assets/slides/BYOL_SimSiam_slides.pdf"
-  btn_label: "Slides"
-  btn_class: "btn--primary"
-
 feature_row2:
 
 - image_path: assets/images/3d-recon.png
@@ -147,29 +170,18 @@ feature_row1:
   btn_label: "Paper"
   btn_class: "btn--primary"
 
-feature_row0:
-
-- image_path: assets/images/cyclegan-pic.png
-  image_caption: "Zhu et al., _Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks_, ICCV, 2017"
-  title: "10/23/2020"
-  excerpt: "I gave a talk on [CycleGAN (Zhu et al.)](https://openaccess.thecvf.com/content_iccv_2017/html/Zhu_Unpaired_Image-To-Image_Translation_ICCV_2017_paper.html) and its applications in medical imaging at our _Learning from Signals and Data_ journal club. CycleGAN is a powerful image-to-image translation network that learns to map images of a certain domain (e.g. landscape photos) to another domain (e.g. paintings) and vice versa *without seeing corresponding pairs from these two domains*. The key idea is to make sure that if we translate an image and then translate it back, we recover the original image. CycleGAN and its variants have been very successful in cross-modal image synthesis in medical tasks. That is it can create synthetic images of a target modality (e.g. MRI) from images of a different source modality (e.g. CT)."
-  url: "/assets/slides/cycleGAN_slides.pdf"
-  btn_label: "Slides"
-  btn_class: "btn--primary"
-
 ---
+{% include feature_row id="feature_row17" type="left" %}
+{% include feature_row id="feature_row16" type="left" %}
+{% include feature_row id="feature_row15" type="left" %}
 {% include feature_row id="feature_row14" type="left" %}
 {% include feature_row id="feature_row13" type="left" %}
-{% include feature_row id="feature_row12" type="left" %}
 {% include feature_row id="feature_row11" type="left" %}
 {% include feature_row id="feature_row10" type="left" %}
 {% include feature_row id="feature_row9" type="left" %}
 {% include feature_row id="feature_row8" type="left" %}
-{% include feature_row id="feature_row7" type="left" %}
 {% include feature_row id="feature_row6" type="left" %}
 {% include feature_row id="feature_row5" type="left" %}
 {% include feature_row id="feature_row4" type="left" %}
-{% include feature_row id="feature_row3" type="left" %}
 {% include feature_row id="feature_row2" type="left" %}
 {% include feature_row id="feature_row1" type="left" %}
-{% include feature_row id="feature_row0" type="left" %}

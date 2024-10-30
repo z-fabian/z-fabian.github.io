@@ -2,7 +2,7 @@
 title: "HUMUS-Net: Hybrid unrolled multi-scale network architecture for accelerated MRI reconstruction"
 collection: publications
 permalink: /publications/2022-03-15-humus-net-hybrid-unrolled-network
-excerpt: 'Fabian, Z., Tinaz, B. and Soltanolkotabi, M., 2022, In Advances in Neural Information Processing Systems (25306--25319)'
+excerpt: 'Fabian, Z., Tinaz, B. and Soltanolkotabi, M., NeurIPS 2022'
 date: 2022-12-01
 
 ---

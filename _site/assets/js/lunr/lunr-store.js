@@ -35,7 +35,7 @@ var store = [{
         "url": "/publications/2021-01-18-3d-phase-retrieval-at-nano-scale",
         "teaser": null
       },{
-        "title": "Data augmentation for deep learning based accelerated MRI reconstruction with limited data",
+        "title": "[Spotlight] Data augmentation for deep learning based accelerated MRI reconstruction with limited data",
         "excerpt":"Zalan Fabian, Reinhard Heckel, Mahdi Soltanolkotabi Published in International Conference on Machine Learning , 2021 Deep neural networks have emerged as very successful tools for image restoration and reconstruction tasks. These networks are often trained end-to-end to directly reconstruct an image from a noisy or corrupted measurement of that image....","categories": [],
         "tags": [],
         "url": "/publications/2021-07-01-data-augmentation-for-deep-learning",
@@ -47,22 +47,10 @@ var store = [{
         "url": "/publications/2022-03-15-humus-net-hybrid-unrolled-network",
         "teaser": null
       },{
-        "title": "DiracDiffusion: Denoising and Incremental Reconstruction with Assured Data-Consistency",
-        "excerpt":"Zalan Fabian, Berk Tinaz, Mahdi Soltanolkotabi arXiv:2303.14353 Diffusion models have established new state of the art in a multitude of computer vision tasks, including image restoration. Diffusion-based inverse problem solvers generate reconstructions of exceptional visual quality from heavily corrupted measurements. However, in what is widely known as the perception-distortion trade-off,...","categories": [],
-        "tags": [],
-        "url": "/publications/2023-03-25-diracdiffusion",
-        "teaser": null
-      },{
         "title": "mL-BFGS: A Momentum-based L-BFGS for Distributed Large-scale Neural Network Optimization",
         "excerpt":"Yue Niu, Zalan Fabian, Sunwoo Lee, Mahdi Soltanolkotabi, Salman Avestimehr Published in Transactions on Machine Learning Research, 2023 Quasi-Newton methods still face significant challenges in training large-scale neural networks due to additional compute costs in the Hessian related computations and instability issues in stochastic training. A well-known method, L-BFGS that...","categories": [],
         "tags": [],
         "url": "/publications/2023-07-01-ml-bfgs",
-        "teaser": null
-      },{
-        "title": "Adapt and Diffuse: Sample-adaptive Reconstruction via Latent Diffusion Models",
-        "excerpt":"Zalan Fabian, Berk Tinaz, Mahdi Soltanolkotabi arXiv:2309.06642, 2023 Inverse problems arise in a multitude of applications, where the goal is to recover a clean signal from noisy and possibly (non)linear observations. The difficulty of a reconstruction problem depends on multiple factors, such as the structure of the ground truth signal,...","categories": [],
-        "tags": [],
-        "url": "/publications/2023-09-12-adapt-and-diffuse",
         "teaser": null
       },{
         "title": "Multimodal Foundation Models for Zero-shot Animal Species Recognition in Camera Trap Images",
@@ -72,8 +60,38 @@ var store = [{
         "teaser": null
       },{
         "title": "A Data-Free Approach to Mitigate Catastrophic Forgetting in Federated Class Incremental Learning for Vision Tasks",
-        "excerpt":"Sara Babakniya, Zalan Fabian, Chaoyang He, Mahdi Soltanolkotabi, Salman Avestimehr arXiv:2311.07784, 2023 Deep learning models often suffer from forgetting previously learned information when trained on new data. This problem is exacerbated in federated learning (FL), where the data is distributed and can change independently for each user. Many solutions are...","categories": [],
+        "excerpt":"Sara Babakniya, Zalan Fabian, Chaoyang He, Mahdi Soltanolkotabi, Salman Avestimehr Published in Advances in Neural Information Processing Systems, 2023 Deep learning models often suffer from forgetting previously learned information when trained on new data. This problem is exacerbated in federated learning (FL), where the data is distributed and can change...","categories": [],
         "tags": [],
-        "url": "/publications/2023-11-13-a-data-free-approach",
+        "url": "/publications/2023-12-10-a-data-free-approach",
+        "teaser": null
+      },{
+        "title": "Serpent: Scalable and Efficient Image Restoration via Multi-scale Structured State Space Models",
+        "excerpt":"Mohammad Shahab Sepehri, Zalan Fabian, Mahdi Soltanolkotabi arXiv:2403.17902, 2024 The landscape of computational building blocks of efficient image restoration architectures is dominated by a combination of convolutional processing and various attention mechanisms. However, convolutional filters, while efficient, are inherently local and therefore struggle with modeling long-range dependencies in images. In...","categories": [],
+        "tags": [],
+        "url": "/publications/2024-03-26-serpent",
+        "teaser": null
+      },{
+        "title": "[Spotlight] Adapt and Diffuse: Sample-adaptive Reconstruction via Latent Diffusion Models",
+        "excerpt":"Zalan Fabian*, Berk Tinaz*, Mahdi Soltanolkotabi Published in International Conference on Machine Learning, 2024 *equal contribution Inverse problems arise in a multitude of applications, where the goal is to recover a clean signal from noisy and possibly (non)linear observations. The difficulty of a reconstruction problem depends on multiple factors, such...","categories": [],
+        "tags": [],
+        "url": "/publications/2024-07-20-adapt-and-diffuse",
+        "teaser": null
+      },{
+        "title": "DiracDiffusion: Denoising and Incremental Reconstruction with Assured Data-Consistency",
+        "excerpt":"Zalan Fabian, Berk Tinaz, Mahdi Soltanolkotabi Published in International Conference on Machine Learning, 2024 Diffusion models have established a new state of the art in a multitude of computer vision tasks, including image restoration. Diffusion-based inverse problem solvers generate reconstructions of exceptional visual quality from heavily corrupted measurements. However, in...","categories": [],
+        "tags": [],
+        "url": "/publications/2024-07-20-diracdiffusion",
+        "teaser": null
+      },{
+        "title": "New frontiers in AI for biodiversity research and conservation with multimodal language models",
+        "excerpt":"Zhongqi Miao, Yuanhan Zhang, Zalan Fabian, Andres Hernandez Celis, Sara Beery, Chunyuan Li, Ziwei Liu, Amrita Gupta, Md Nasir, Wanhua Li, Jason Holmberg, Meredith Palmer, Kaitlyn Gaynor, Rahul Dodhia, Juan Lavista Ferres EcoEvoRxiv, 2024 The integration of Artificial Intelligence (AI) into biodiversity research and conservation is growing rapidly, demonstrating great...","categories": [],
+        "tags": [],
+        "url": "/publications/2024-08-01-new-frontiers",
+        "teaser": null
+      },{
+        "title": "MediConfusion: Can you trust your AI radiologist? Probing the reliability of multimodal medical foundation models",
+        "excerpt":"Mohammad Shahab Sepehri, Zalan Fabian, Maryam Soltanolkotabi, Mahdi Soltanolkotabi arXiv:2409.15477, 2024 Multimodal Large Language Models (MLLMs) have tremendous potential to improve the accuracy, availability, and cost-effectiveness of healthcare by providing automated solutions or serving as aids to medical professionals. Despite promising first steps in developing medical MLLMs in the past...","categories": [],
+        "tags": [],
+        "url": "/publications/2024-09-23-mediconfusion",
         "teaser": null
       }]
